@@ -26,7 +26,12 @@ class UnSplashListTile extends StatelessWidget {
             fontWeight: FontWeight.w600,
           ),
         ),
-        trailing: icon != null ? Icon(icon) : SizedBox(),
+        trailing: icon != null
+            ? Icon(
+                icon,
+                size: 28,
+              )
+            : SizedBox(),
         onTap: onTap,
       ),
     );
